@@ -1,16 +1,17 @@
+#include <cmath>
+#include <functional>
 #include <iostream>
+#include <optional>
 #include <unordered_map>
 #include <variant>
-#include <functional>
-#include <optional>
 
 class Sigma {
-public:
+   public:
     Sigma(int start, int end, std::function<int(Sigma&)> func);
 
     int start;
     int end;
-    int count{0};
+    int count{start};
     std::optional<int> result{std::nullopt};
     std::function<int(Sigma&)> func;
 
@@ -18,37 +19,40 @@ public:
 };
 
 Sigma::Sigma(int start, int end, std::function<int(Sigma&)> func)
-    : start(start),
-      end(end),
-      func(std::move(func)) {}
+    : start(start), end(end), func(std::move(func)) {}
 
 int Sigma::run() {
-    if (result.has_value()) return result.value();
+    if (result.has_value())
+        return result.value();
     int acc = 0;
     for (; count <= end; count++) {
         acc += func(*this);
+        //std::cout << acc << std::endl;
     }
     result = acc;
     return acc;
 }
 
+int main(int argc, char* argv[]) {
+    int n = atoi(argv[1]);
 
+    /*Test1
+    Sigma s(1, n, [](Sigma& s1) -> int {
+        return Sigma(1, s1.count, [](Sigma& s2) -> int { return s2.count; })
+            .run();
+    });*/
+    Sigma s(1, n, [&](Sigma& s1) -> int {
+        return Sigma(1, static_cast<int>(std::pow(s1.count, 2)),
+                     [&](Sigma& s2) -> int {
+                         return Sigma(
+                                    1, s1.count + s2.count,
+                                    [&](Sigma& s3) -> int { return s3.count; })
+                             .run();
+                     })
+            .run();
+    });
 
+    int result = s.run();
 
-int sigma(int start, int end, int (*func)(int))
-{
-    int acc = 0;
-    for (int i = start; i <= end; i++)
-    {
-        acc += func(i);
-    }
-    return acc;
-}
-
-int main()
-{
-    int m = 10;
-    int acc = sigma(0, 2 * m, [](int i) -> int
-                    { return i / 2; });
-    std::cout << acc << std::endl;
+    std::cout << result << std::endl;
 }
