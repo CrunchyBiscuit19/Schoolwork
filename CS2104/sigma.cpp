@@ -36,12 +36,11 @@ int Sigma::run() {
 int main(int argc, char* argv[]) {
     int n = atoi(argv[1]);
 
-    /*Test1
-    Sigma s(1, n, [](Sigma& s1) -> int {
+    /*Sigma s(1, n, [](Sigma& s1) -> int {
         return Sigma(1, s1.count, [](Sigma& s2) -> int { return s2.count; })
             .run();
     });*/
-    Sigma s(1, n, [&](Sigma& s1) -> int {
+    /*Sigma s(1, n, [&](Sigma& s1) -> int {
         return Sigma(1, static_cast<int>(std::pow(s1.count, 2)),
                      [&](Sigma& s2) -> int {
                          return Sigma(
@@ -50,6 +49,17 @@ int main(int argc, char* argv[]) {
                              .run();
                      })
             .run();
+    });*/
+    Sigma s(0, n, [&](Sigma& s1) -> int {
+        //return 1;
+        return Sigma(0, s1.count, [&](Sigma& s2) -> int { return 1; }).run();
+        /*return Sigma(1, s1.count,
+                     [&](Sigma& s2) -> int {
+                         return Sigma(1, s2.count,
+                                      [&](Sigma& s2) -> int { return 1; })
+                             .run();
+                     })
+            .run();*/
     });
 
     int result = s.run();
