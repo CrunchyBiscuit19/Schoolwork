@@ -24,7 +24,7 @@ int Sigma1(int n, std::function<int(int)>& f) {
     return acc;
 }
 
-int main() {
+int q5tests() {
     std::vector<int> n = {-3, -2, -1, 0, 1, 2};
     std::vector<std::function<int(int)>> f = {
         [](int i) -> int { return std::pow(i, 3); },
@@ -56,4 +56,8 @@ int main() {
                                      expected[i], res);
         }
     }
+}
+
+int main() {
+    q5tests();
 }
