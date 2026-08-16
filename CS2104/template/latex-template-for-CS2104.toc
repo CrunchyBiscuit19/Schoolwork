@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Overall Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Exercise X: Title}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Statement}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Introduction}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Solution}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Conclusion}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Exercise Y: Title}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statement}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Introduction}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Solution}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Conclusion}{5}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Exercise Z: Title}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Statement}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Introduction}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Solution}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Conclusion}{6}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Overall Conclusion}{7}{section.5}%

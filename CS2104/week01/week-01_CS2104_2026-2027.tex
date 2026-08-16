@@ -1,0 +1,1173 @@
+% week-01_CS2104_2026-2027.tex
+% Adapted from latex-template-for-CS2104.tex
+
+% LaTeX report for CS2104 Week 01
+
+%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{color}
+% \definecolor{ltblue}{rgb}{0,0.4,0.4}
+\definecolor{ltblue}{rgb}{0,0.0,0.0}
+% \definecolor{dkblue}{rgb}{0,0.1,0.6}
+\definecolor{dkblue}{rgb}{0,0.0,0.0}
+% \definecolor{dkgreen}{rgb}{0,0.35,0}
+\definecolor{dkgreen}{rgb}{0,0.0,0}
+% \definecolor{dkviolet}{rgb}{0.3,0,0.5}
+\definecolor{dkviolet}{rgb}{0.0,0,0.0}
+% \definecolor{dkred}{rgb}{0.5,0,0}
+\definecolor{dkred}{rgb}{0.0,0,0}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{
+  CS2104 Report for Week 01
+  \\
+  Week 01 Exercise Report
+}
+
+\author{
+    \textbf{Sim Yue Yang} (Student ID, yueyangsim02@gmail.com)
+    % TODO
+}
+
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+This document contains the solutions to the Week 01 exercise. The code is provided in a separate file along with this document.
+\end{abstract}
+
+\vfill
+
+\begin{center}
+...a picture, maybe...
+\end{center}
+
+\vfill
+
+\begin{flushright}
+\emph{...a relevant quote, possibly...} \\
+-- the author of the quote
+\end{flushright}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%
+
+\section{Overall Introduction}
+\label{sec:overall-introduction}
+
+\begin{itemize}
+
+\item
+  This document is the document that documents the solutions for the questions in the Week01 handin document.
+
+\item
+  This document documents the solutions for the questions in the Week01 handin.
+
+\item
+  This point is situated in week 01 of the semester.
+
+\item
+  Title, abstract, content table, introduction, exercises (question, introduction, solution, conclusion for each exercise), and an overall conclusion.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 1: Self-reference}
+
+%%%%%
+
+\subsection{Statement}
+
+The first lecture started with the DSB jingles \#1 and \#2 at
+\href{https://toglyde.dk/toglyde/stationslyde-inkl-hoejttalerudkald/}{toglyde.dk}.
+
+Using the
+\href{https://en.wikipedia.org/wiki/Solf\%C3\%A8ge\#Fixed_do_solf\%C3\%A8ge}{fixed-do solf\`ege},
+this three-note jingle D/Eb/Bb (pronounced D/S/B in Danish, i.e., D Sharp B) is
+the acronym of DSB, the Danish Railroad Company ``Danske Statsbaner'', and is
+played in Danish rail stations when a train arrives. It is due to the Danish
+composer
+\href{https://en.wikipedia.org/wiki/Niels_Viggo_Bentzon}{Niels Viggo Bentzon}.
+
+This jingle illustrates self-reference since reading aloud yields the name DSB.
+
+Other examples of self-reference include the
+\href{https://en.wikipedia.org/wiki/Liar_paradox}{liar paradox} and Ren\'e
+Magritte's painting
+\href{https://en.wikipedia.org/wiki/Ceci_n\%27est_pas_une_pipe}{``The Treachery of Images''}.
+
+\textbf{1.a.} Identify the self-reference in the cover of blues guitarist Coco
+Montoya's album
+\href{https://cocomontoya.bandcamp.com/album/writing-on-the-wall}{``The Writing on the Wall''}.
+
+\textbf{1.b.} Identify the self-reference in the cover of Gail Carson Levine's
+book
+\href{https://www.goodreads.com/book/show/136218.Writing_Magic}{``Writing Magic: Creating Stories that Fly''}.
+
+\textbf{1.c.} Identify the self-reference in
+\href{http://en.wikipedia.org/wiki/Alan_Perlis}{Alan Perlis}'s
+\href{http://www.cs.yale.edu/homes/perlis-alan/quotes.html}{programming epigram \#59}:
+
+\begin{quote}
+In English, every word can be verbed.
+\end{quote}
+
+All the self-references above are direct. Some self-references are indirect in
+that something named A refers to something named B that refers to A. For
+example, for any natural number n, the number n+1 is even if the number n is
+odd, and the number n+1 is odd if the number n is even.
+
+\textbf{1.d.} Identify the indirect self-reference in the following story:
+
+\begin{quote}
+Two women walk into a bar and talk about the
+\href{https://en.wikipedia.org/wiki/Bechdel_test}{Bechdel-Wallace test}.
+\end{quote}
+
+\textbf{1.e.} Identify the self-reference, if there is one, in the following
+sentences:
+
+\begin{itemize}
+\item \textbf{1.e.1.} This sentence no verb.
+\item \textbf{1.e.2.} Nostalgia isn't what it used to be.
+\item \textbf{1.e.3.} Fashion is what goes out of fashion. ---
+  \href{https://en.wikipedia.org/wiki/Coco_Chanel}{Coco Chanel}
+\item \textbf{1.e.4.} To be or not to be.
+  (\href{https://en.wikipedia.org/wiki/To_be_or_not_to_be}{phrase} $\cdot$
+  \href{https://en.wikipedia.org/wiki/To_Be_or_Not_to_Be_(1942_film)}{1942 film})
+\end{itemize}
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to identify self-references across various media and sentences.
+
+\item
+  The exercise is solved by inspecting each example and describing how it refers to itself.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+\textbf{1.a.} The album cover features a literal writing on the wall.
+
+\textbf{1.b.} The person on the cover is writing the word ``Magic'', taking the
+phrase ``Writing Magic'' literally.
+
+\textbf{1.c.} The word ``verb'' is used as a verb in the sentence.
+
+\textbf{1.d.} The Bechdel-Wallace test checks if 2 female characters in a story
+converse about something other than a male character. This story about two women
+conversing about the Bechdel-Wallace test itself passes the Bechdel-Wallace
+test.
+
+\textbf{1.e.1} None.
+
+\textbf{1.e.2} The subject is nostalgic for the concept of nostalgia.
+
+\textbf{1.e.3} Fashion is ever-changing, so all fashion can eventually become
+irrelevant (``goes out of fashion'').
+
+\textbf{1.e.4} None.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to practice spotting self-reference.
+
+\item
+  The learning points illustrated were direct self-reference, and indirect self-reference where A refers to B which refers back to A.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 2: Media involving media}
+
+%%%%%
+
+\subsection{Statement}
+
+Can you think of
+
+\begin{itemize}
+\item a book involving a book,
+\item a theater play involving a theater play, or
+\item a movie involving a movie?
+\end{itemize}
+
+More generally, can you think of one of these mediums (book, theater play,
+movie, TV series, etc.) involving one of these mediums?
+
+If so, briefly describe a couple of them and their involvement.
+
+\textbf{Subsidiary question:} Give an example where self-reference is used in
+Computer Science.
+
+\textbf{Partial solution for Exercise 2.}
+\href{https://en.wikipedia.org/wiki/A_Midsummer_Night\%27s_Dream}{``A Midsummer Night's Dream''}
+qualifies because in Scene 1 of Act V,
+\href{https://en.wikipedia.org/wiki/Pyramus_and_Thisbe\#Adaptations}{Pyramus and Thisbe}
+is a play within a play.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to find a medium that contains another instance of a medium, and an example of self-reference in Computer Science.
+
+\item
+  The exercise is solved by recalling examples from memory.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+\begin{itemize}
+\item In Ridge Racer 7, the playable mini-game that appears during loading
+  screens is Galaxian, the classic Namco arcade shooter.
+\item In computer science, recursive functions are functions that call
+  themselves as part of their execution.
+\end{itemize}
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to spot self-reference in nested media and Computer Science.
+
+\item
+  The exercise was solved by giving real-life examples.
+
+\item
+  The learning point illustrated was that recursion is a form of self-reference.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 3: A multiple-choice question}
+
+%%%%%
+
+\subsection{Statement}
+
+Facetiously, you are asked whether there exists a word in English that contains
+all of the letters ``a'', ``e'', ``i'', ``o'', ``u'', and ``y'', in that order.
+Does there exist such a word in English?
+
+Possible answers:
+
+\begin{itemize}
+\item \textbf{a.} Yes, unquestionably. Constant vigilance!
+\item \textbf{b.} No.
+\item \textbf{c.} I cannot possibly know this, and furthermore this facetious
+  question is nefariously out of scope in CS2104.
+\end{itemize}
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to determine whether an English word contains the letters a, e, i, o, u, y in that order.
+
+\item
+  The exercise is solved by finding one such word.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+\begin{itemize}
+\item a. ``Adventitiously''.
+\end{itemize}
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to copy-paste the question into google.
+
+\item
+  The exercise was solved by finding the word "adventitiously".
+
+\item
+  The learning point illustrated was that the word "adventitiously" exists.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 4: The Sorcerer's Apprentice}
+
+%%%%%
+
+\subsection{Statement}
+
+In reference to LLMs, please view the short piece ``The Sorcerer's Apprentice''
+in \href{https://en.wikipedia.org/wiki/Fantasia_(1940_film)}{``Fantasia''}.
+
+\textbf{N.B.:} While you are at it, expand your musical culture with Paul
+Dukas's score, as a continuation of Johann Strauss II's waltz that you so
+magnificently rendered at the beginning of the first lecture
+(\href{https://en.wikipedia.org/wiki/The_Blue_Danube}{The Blue Danube}).
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to relate "The Sorcerer's Apprentice" to LLMs.
+
+\item
+  The exercise is solved by reading the short piece.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+\begin{itemize}
+\item The story is about the apprentice using magic, losing control of it, which results in a mess. If we view this as analogy where the apprentice is a CS undergrad and the magic is the LLM, we could say that a CS undergrad using LLMs wantonly will get nowhere. 
+\end{itemize}
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to draw an analogy between LLMs and magic.
+
+\item
+  The exercise was solved by reading the piece.
+
+\item
+  The learning point illustrated was the risk of using LLMs without knowledge over its outputs.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 5: Implementing the Sigma notation using a for loop}
+
+%%%%%
+
+\subsection{Statement}
+
+See \href{https://en.wikipedia.org/wiki/Capital-sigma_notation}{Capital-sigma notation}.
+
+The Sigma notation reads, given a non-negative integer n and a function f from
+(non-negative) integers to integers,
+
+\begin{verbatim}
+sum for i = 0 to n of f(i)
+\end{verbatim}
+
+and it stands for
+
+\begin{verbatim}
+f(0) + f(1) + ... + f(n)
+\end{verbatim}
+
+In this notation, 0 is the lower bound, n is the upper bound, and f(i) is the
+body.
+
+Here, the notation is extended to negative integers in that given a negative
+integer m and a function f,
+
+\begin{verbatim}
+sum for i = 0 to m of f(i)
+\end{verbatim}
+
+stands for
+
+\begin{verbatim}
+0
+\end{verbatim}
+
+The starting point of this exercise is to implement --- in the programming
+language of your choice --- a routine / function / procedure / method /
+what-have-you named \texttt{Sigma0} that takes two parameters: an integer n and
+a function from integer to integer f. Applying \texttt{Sigma0} to n and f should
+yield the result of \texttt{f(0) + f(1) + ... + f(n)} when \texttt{n} is
+non-negative, and \texttt{0} otherwise.
+
+\textbf{5.a.} Devise meaningful tests for your implementation. For example,
+\texttt{f} could be a constant function, or the identity function, or the
+function that maps an integer \texttt{i} to the \texttt{i}+first odd natural
+number (namely \texttt{i.2*i + 1} using the lambda notation; then what is
+computed is \texttt{1 + 3 + 5 + ...}).
+
+\textbf{5.b.} Implement \texttt{Sigma0} using a for loop.
+
+\textbf{5.c.} Check that your implementation passes your unit tests. (The testing
+should be automatic, and since what goes well should go without saying, it
+should only report the tests that failed.)
+
+\textbf{5.d.} Implement a function named \texttt{Sigma1} that takes two
+parameters: an integer n and a function from integer to integer \texttt{f}.
+Applying \texttt{Sigma1} to \texttt{n} and \texttt{f} should yield the result of
+\texttt{f(1) + ... + f(n)} when \texttt{n} is positive, and \texttt{0} otherwise.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to implement the Sigma notation with a for loop and test it.
+
+\item
+  The exercise is solved by accumulating $f(i)$ over the range in a loop, returning 0 for a negative upper bound.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+See functions Sigma0 and Sigma1 in week01.cpp.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to implement Sigma notation as code and verify it.
+
+\item
+  The exercise was solved with a for-loop accumulator guarding negative bounds, checked by automated tests.
+
+\item
+  The learning points illustrated were summation as iteration, higher-order functions, and automated unit testing.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 6: Sums of floor divisions}
+
+%%%%%
+
+\subsection{Statement}
+
+\textbf{6.a.} Given a non-negative integer n, what is the result of
+
+\begin{verbatim}
+sum for i = 0 to 2 * n of floor(n/2)
+\end{verbatim}
+
+where floor(5/2) = 2 and floor(6/2) = 3.
+
+\textbf{6.b.} Given a non-negative integer n, what is the result of
+
+\begin{verbatim}
+sum for i = 0 to 3 * n of floor(n/3)
+\end{verbatim}
+
+\textbf{6.c.} Given a non-negative integer n, what is the result of
+
+\begin{verbatim}
+sum for i = 0 to 4 * n of floor(n/4)
+\end{verbatim}
+
+Hint: Use the
+\href{https://oeis.org/}{Online Encyclopedia of Integer Sequences}.
+
+\textbf{6.d.} Given a non-negative integer n, what is the result of
+
+\begin{verbatim}
+sum for i = 0 to 1 * n of floor(n/1)
+\end{verbatim}
+
+(Can you simplify this formulation?)
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to find closed forms for sums whose body is a constant floor term.
+
+\item
+  The exercise is solved by noting the body does not depend on $i$, so the result is the body times the number of terms.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+For each part let $r$ be the result.
+
+\textbf{6.a.} $r = (2n + 1)\left\lfloor \dfrac{n}{2} \right\rfloor$
+
+\textbf{6.b.} $r = (3n + 1)\left\lfloor \dfrac{n}{3} \right\rfloor$
+
+\textbf{6.c.} $r = (4n + 1)\left\lfloor \dfrac{n}{4} \right\rfloor$
+
+\textbf{6.d.} $r = (n + 1)(n)$
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to derive closed forms for constant-body sums.
+
+\item
+  The exercise was solved by multiplying the number of terms by the constant body.
+
+\item
+  The learning point illustrated was that a constant summand gives (count) $\times$ (value).
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 7: Nested sums and binomials}
+
+%%%%%
+
+\subsection{Statement}
+
+\textbf{7.a.} What is the result of
+
+\begin{verbatim}
+1
+\end{verbatim}
+
+\textbf{7.b.} Given a non-negative integer x, what is the result of
+
+\begin{verbatim}
+sum for i1 = 0 to x of
+1
+\end{verbatim}
+
+\textbf{7.c.} Given a non-negative integer x, what is the result of
+
+\begin{verbatim}
+sum for i2 = 0 to x of
+sum for i1 = 0 to i2 of
+1
+\end{verbatim}
+
+\textbf{7.d.} Given a non-negative integer x, what is the result of
+
+\begin{verbatim}
+sum for i3 = 0 to x of
+sum for i2 = 0 to i3 of
+sum for i1 = 0 to i2 of
+1
+\end{verbatim}
+
+\textbf{7.e.} Given a non-negative integer x, what is the result of
+
+\begin{verbatim}
+sum for i4 = 0 to x of
+sum for i3 = 0 to i4 of
+sum for i2 = 0 to i3 of
+sum for i1 = 0 to i2 of
+1
+\end{verbatim}
+
+\textbf{7.f.} Implement a function that maps two non-negative integers N and x to
+
+\begin{verbatim}
+sum for iN = 0 to x of
+sum for iN-1 = 0 to iN of
+...
+sum for i2 = 0 to i3 of
+sum for i1 = 0 to i2 of
+1
+\end{verbatim}
+
+$\displaystyle\sum_{i_{N}=0}^{x}\sum_{i_{N-1}=0}^{i_{N}}\dots\sum_{i_{2}=0}^{i_{3}}\sum_{i_{1}=0}^{i_{2}}1$
+
+and empirically characterize its result. If possible (ha, ha, ha), justify your
+characterization.
+
+\textbf{N.B.:} Since there is no ambiguity, feel free to write
+
+\begin{verbatim}
+sum for i = 0 to x of
+sum for i = 0 to i of
+...
+sum for i = 0 to i of
+sum for i = 0 to i of
+1
+\end{verbatim}
+
+but then you need to say that there are N occurrences of ``sum'' since this
+information is no longer present in the notation.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to characterize the result of $N$ nested sums of 1.
+
+\item
+  The exercise is solved by computing values into a sequence, and looking them up on OEIS.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+For each part let $r$ be the result.
+
+\textbf{7.a.} $r = 1$
+
+\textbf{7.b.} $r = x + 1$
+
+\textbf{7.c.} $r = \dfrac{(x + 1)(x + 2)}{2}$
+
+\textbf{7.d.} $r = \dfrac{(x + 1)(x + 2)(x + 3)}{6}$
+
+\textbf{7.e.} $r = \dfrac{(x + 1)(x + 2)(x + 3)(x + 4)}{24}$
+
+\textbf{7.f.}
+
+See function q7 in week01.cpp.
+
+The following are the outputs for the function for $N \in [0,5]$ and
+$x \in [0,5]$:
+
+\begin{verbatim}
+N = 0, x = 0 | 1
+N = 0, x = 1 | 1
+N = 0, x = 2 | 1
+N = 0, x = 3 | 1
+N = 0, x = 4 | 1
+N = 0, x = 5 | 1
+N = 1, x = 0 | 1
+N = 1, x = 1 | 2
+N = 1, x = 2 | 3
+N = 1, x = 3 | 4
+N = 1, x = 4 | 5
+N = 1, x = 5 | 6
+N = 2, x = 0 | 1
+N = 2, x = 1 | 3
+N = 2, x = 2 | 6
+N = 2, x = 3 | 10
+N = 2, x = 4 | 15
+N = 2, x = 5 | 21
+N = 3, x = 0 | 1
+N = 3, x = 1 | 4
+N = 3, x = 2 | 10
+N = 3, x = 3 | 20
+N = 3, x = 4 | 35
+N = 3, x = 5 | 56
+N = 4, x = 0 | 1
+N = 4, x = 1 | 5
+N = 4, x = 2 | 15
+N = 4, x = 3 | 35
+N = 4, x = 4 | 70
+N = 4, x = 5 | 126
+N = 5, x = 0 | 1
+N = 5, x = 1 | 6
+N = 5, x = 2 | 21
+N = 5, x = 3 | 56
+N = 5, x = 4 | 126
+N = 5, x = 5 | 252
+\end{verbatim}
+
+I have manually calculated the results and verified them to be accurate.
+
+By searching the OEIS, these seem to be the binomial results of
+$\displaystyle\binom{x + N}{N}$.
+
+It can be justified by observing that
+$\displaystyle\binom{a}{b} = \dfrac{a \cdot (a - 1) \cdot \dots \cdot (a - b + 1)}{k \cdot (k - 1) \cdot \dots \cdot 1}$,
+so all that's needed is to offset the $x$ by $+N$ in the top part.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  The point of the exercise was to identify the value of $N$ nested sums of 1.
+
+\item
+  The exercise was solved by recognizing outputs as $\binom{x + N}{N}$.
+
+\item
+  The learning point illustrated was that nested sums count combinations.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 8: Catalan numbers}
+
+%%%%%
+
+\subsection{Statement}
+
+Implement a function that maps non-negative integer N to
+
+\begin{verbatim}
+sum for iN = 0 to 0 of
+sum for iN-1 = 0 to iN+1 of
+...
+sum for i2 = 0 to i3+1 of
+sum for i1 = 0 to i2+1 of
+1
+\end{verbatim}
+
+$\displaystyle\sum_{i_{N}=0}^{0}\sum_{i_{N-1}=0}^{i_{N}+1}\dots\sum_{i_{2}=0}^{i_{3}+1}\sum_{i_{1}=0}^{i_{2}+1}1$
+
+and empirically characterize its result. If possible (ha, ha, ha), justify your
+characterization.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  The point of the exercise is to characterize a nested sum whose bounds are shifted by $+1$.
+
+\item
+  The exercise is solved by a recursive implementation, tabulating the outputs, and matching against the OEIS.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+See function q8 in week01.cpp.
+
+The following are the outputs for the function for $N \in [0,10]$:
+
+\begin{verbatim}
+N = 0 | 1
+N = 1 | 1
+N = 2 | 2
+N = 3 | 5
+N = 4 | 14
+N = 5 | 42
+N = 6 | 132
+N = 7 | 429
+N = 8 | 1430
+N = 9 | 4862
+N = 10 | 16796
+\end{verbatim}
+
+I have manually calculated the results and verified them to be accurate.
+
+By searching the OEIS, these seem to be the Catalan sequence.
+
+After reading the Wikipedia page on Catalan numbers, I have concluded that I do
+not understand it, and therefore will not attempt to justify the
+characterization.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  To identify the value of the shifted nested sum.
+
+\item
+  By recursion and an OEIS lookup, giving the Catalan numbers.
+
+\item
+  The Catalan sequence.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 9: Fibonacci sequence}
+
+%%%%%
+
+\subsection{Statement}
+
+Implement a function that maps non-negative integer N
+
+\begin{verbatim}
+sum for iN = 0 to 0 of
+sum for iN-1 = 0 to 1-iN of
+...
+sum for i2 = 0 to 1-i3 of
+sum for i1 = 0 to 1-i2 of
+1
+\end{verbatim}
+
+$\displaystyle\sum_{i_{N}=0}^{0}\sum_{i_{N-1}=0}^{1-i_{N}}\dots\sum_{i_{2}=0}^{1-i_{3}}\sum_{i_{1}=0}^{1-i_{2}}1$
+
+and characterize its result. (Remember that if the upper bound of a summation is
+negative, the result is 0.) If possible (ha, ha, ha), justify your
+characterization.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  To characterize a nested sum whose bounds are of the form $1 - i$.
+
+\item
+  The exercise is solved by a recursive implementation, tabulating the outputs, and matching against the OEIS.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+See function q9 in week01.cpp.
+
+The following are the outputs for the function for $N \in [0,10]$:
+
+\begin{verbatim}
+N = 0 | 1
+N = 1 | 1
+N = 2 | 2
+N = 3 | 3
+N = 4 | 5
+N = 5 | 8
+N = 6 | 13
+N = 7 | 21
+N = 8 | 34
+N = 9 | 55
+N = 10 | 89
+\end{verbatim}
+
+I have manually calculated the results and verified them to be accurate.
+
+By searching the OEIS, these seem to be the $N$-th number of the fibonacci
+sequence.
+
+It can be justified by observing that to calculate for $N$, the count of the 2nd
+sigma operation is between 0 and 1. When that count is 0, it recursively
+calculates for $N-1$, and when the count is 1, it recursively calculates for
+$N-2$. Then the 2nd sigma operation simply sums up the result.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  To identify the value of this nested sum.
+
+\item
+  By recursion producing $f(N-1) + f(N-2)$, giving the Fibonacci numbers.
+
+\item
+  The Fibonacci recurrence arising from the summation bounds.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 10: Factorials (decreasing bounds)}
+
+%%%%%
+
+\subsection{Statement}
+
+Implement a function that maps non-negative integer N
+
+\begin{verbatim}
+sum for i = 0 to N of
+sum for i = 0 to N-1 of
+...
+sum for i = 0 to 2 of
+sum for i = 0 to 1 of
+sum for i = 0 to 0 of
+1
+\end{verbatim}
+
+$\displaystyle\sum_{i=0}^{N}\sum_{i=0}^{N-1}\dots\sum_{i=0}^{2}\sum_{i=0}^{1}\sum_{i=0}^{0}1$
+
+and characterize its result. Justify your characterization.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  To characterize nested sums with constant bounds decreasing from $N$ to 0.
+
+\item
+  By multiplying the layer sizes, tabulating the outputs, and matching against the OEIS.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+See function q10 in week01.cpp.
+
+The following are the outputs for the function for $N \in [0,10]$:
+
+\begin{verbatim}
+N = 0 | 1
+N = 1 | 2
+N = 2 | 6
+N = 3 | 24
+N = 4 | 120
+N = 5 | 720
+N = 6 | 5040
+N = 7 | 40320
+N = 8 | 362880
+N = 9 | 3628800
+N = 10 | 39916800
+\end{verbatim}
+
+I have manually calculated the results and verified them to be accurate.
+
+By searching the OEIS, these seem to be the $N + 1$ factorials.
+
+It can be justified by observing that each Sigma operation nests another Sigma
+operation within that decreases the upper bound by 1, from $N$ to 0. Since it's
+all just adding up 1s, the final sum can be calculated by finding the number of
+total rounds by all Sigma operations. And the multiplied terms are just the
+factorial operation $(N + 1)!$ in reverse.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  To identify the value of these nested sums.
+
+\item
+  By taking the product of the layer sizes, giving $(N + 1)!$.
+
+\item
+  Factorial as a product of counts.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Exercise 11: Factorials (increasing bounds)}
+
+%%%%%
+
+\subsection{Statement}
+
+Implement a function that maps non-negative integer N
+
+\begin{verbatim}
+sum for i = 0 to 0 of
+sum for i = 0 to 1 of
+...
+sum for i = 0 to N-1 of
+sum for i = 0 to N of
+1
+\end{verbatim}
+
+$\displaystyle\sum_{i=0}^{0}\sum_{i=0}^{1}\dots\sum_{i=0}^{N-1}\sum_{i=0}^{N}1$
+
+and characterize its result. Justify your characterization.
+
+%%%%%
+
+\subsection{Introduction}
+
+\begin{itemize}
+
+\item
+  To characterize nested sums with constant bounds increasing from 0 to $N$.
+
+\item
+  By multiplying the layer sizes, tabulating the outputs, and matching against the OEIS.
+
+\end{itemize}
+
+%%%%%
+
+\subsection{Solution}
+
+See function q11 in week01.cpp.
+
+The following are the outputs for the function for $N \in [0,10]$:
+
+\begin{verbatim}
+N = 0 | 1
+N = 1 | 2
+N = 2 | 6
+N = 3 | 24
+N = 4 | 120
+N = 5 | 720
+N = 6 | 5040
+N = 7 | 40320
+N = 8 | 362880
+N = 9 | 3628800
+N = 10 | 39916800
+\end{verbatim}
+
+I have manually calculated the results and verified them to be accurate.
+
+By searching the OEIS, these seem to be the $N + 1$ factorials.
+
+It can be justified by observing that each Sigma operation nests another Sigma
+operation within that increases the upper bound by 1, from 0 up to $N$. Since
+it's all just adding up 1s, the final sum can be calculated by finding the
+number of total rounds by all Sigma operations. And the multiplied terms are
+just the factorial operation $(N + 1)!$ in reverse.
+
+%%%%%
+
+\subsection{Conclusion}
+
+\begin{itemize}
+
+\item
+  To identify the value of these nested sums.
+
+\item
+  By taking the product of the layer sizes, giving $(N + 1)!$ as in Exercise 10.
+
+\item
+  The order of the bounds does not change the product.
+
+\end{itemize}
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Food for Thought}
+
+%%%%%
+
+\subsection{Statement}
+
+These nested sums are not efficient. (Why?) How could their efficiency be
+improved?
+
+%%%%%
+
+\subsection{Solution}
+
+These nested sums, for a certain $N > 0$ requires the $N - 1$ levels of the
+nested sum to be computed before it can continue. The efficiency can be improved
+by finding a formula that allows for direct computation.
+
+%%%%%%%%%%
+
+\newpage
+
+\section{Overall Conclusion}
+
+The overall conclusion goes here:
+
+\begin{itemize}
+
+\item
+  Where are we in the semester and what is the general topic addressed in this
+  report?
+
+\item
+  Which learning does this report document?
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
