@@ -1,0 +1,336 @@
+% week-01_CS2104_2026-2027.txt
+% Time-stamp: <2026-08-14 15:43:32 danvy>
+
+----------
+
+Exercise 1
+
+The first lecture started with the DSB jingles #1 and #2 at
+  https://toglyde.dk/toglyde/stationslyde-inkl-hoejttalerudkald/
+Using the fixed-do solfège 
+  https://en.wikipedia.org/wiki/Solf%C3%A8ge#Fixed_do_solf%C3%A8ge
+this three-note jingle D/Eb/Bb (pronounced D/S/B in Danish, i.e., D Sharp B) is the acronym of DSB, the Danish Railroad Company "Danske Statsbaner", and is played in Danish rail stations when a train arrives.
+It is due to the Danish composer Niels Viggo Bentzon
+  https://en.wikipedia.org/wiki/Niels_Viggo_Bentzon
+
+This jingle illustrates self-reference since reading aloud yields the name DSB.
+
+Other examples of self-reference include the liar paradox
+  https://en.wikipedia.org/wiki/Liar_paradox
+and René Magritte's painting "The Treachery of Images"
+  https://en.wikipedia.org/wiki/Ceci_n%27est_pas_une_pipe
+
+Requests:
+
+1.a.
+Identify the self-reference in the cover of blues guitarist Coco Montaya's album "The Writing on the Wall"
+  https://cocomontoya.bandcamp.com/album/writing-on-the-wall
+
+1.b.
+Identify the self-reference in the cover of Gail Carson Levine's book "Writing Magic: Creating Stories that Fly"
+  https://www.goodreads.com/book/show/136218.Writing_Magic
+
+1.c.
+Identify the self-reference in Alan Perlis's programming epigram #59:
+  "In English, every word can be verbed."
+    http://en.wikipedia.org/wiki/Alan_Perlis
+    http://www.cs.yale.edu/homes/perlis-alan/quotes.html
+
+All the self-references above are direct.
+Some self-references are indirect in that something named A refers to something named B that refers to A.
+For example, for any natural number n, the number n+1 is even if the number n is odd, and the number n+1 is odd if the number n is even.
+
+Requests (continued and ended):
+
+1.d.
+Identify the indirect self-reference in the following story:
+
+  Two women walk into a bar and talk about the Bechdel-Wallace test.
+    https://en.wikipedia.org/wiki/Bechdel_test
+
+1.e.
+Identify the self reference, if there is one, in the following sentences:
+
+1.e.1.
+This sentence no verb.
+
+1.e.2.
+Nostalgia isn't what it used to be.
+
+1.e.3.
+Fashion is what goes out of fashion.
+-- Coco Chanel
+     https://en.wikipedia.org/wiki/Coco_Chanel
+
+1.e.4.
+To be or not to be.
+  https://en.wikipedia.org/wiki/To_be_or_not_to_be
+  https://en.wikipedia.org/wiki/To_Be_or_Not_to_Be_(1942_film)
+
+----------
+
+Exercise 2
+
+Can you think of
+
+* a book involving a book (possibly itself),
+
+* a theater play involving a theater play (possibly itself), or
+
+* a movie involving a movie (possibly itself)?
+
+More generally, can you think of one of these mediums
+(book, theater play, movie, TV series, etc.)
+involving one of these mediums?
+
+If so, briefly describe a couple of them and their involvement.
+
+Subsidiary request:
+Give an example where self-reference is used in Computer Science.
+
+
+Partial solution for Exercise 2
+
+"A Midsummer Night's Dream"
+  https://en.wikipedia.org/wiki/A_Midsummer_Night%27s_Dream
+qualifies because in Scene 1 of Act V, Pyramus and Thisbe
+  https://en.wikipedia.org/wiki/Pyramus_and_Thisbe#Adaptations
+is a play within a play.
+
+----------
+
+Exercise 3 (a multiple-choice question)
+
+Facetiously, you are asked whether there exists a word in English
+that contains all of the letters "a", "e", "i", "o", "u", and "y", in that order.
+Does there exist such a word in English?
+
+Possible answers:
+
+a.
+Yes, unquestionably.  Constant vigilance!
+
+b.
+No.
+
+c.
+I cannot possibly know this,
+and furthermore this facetious question is nefariously out of scope in CS2104.
+
+----------
+
+Exercise 4
+
+In reference to LLMs, please view the short piece "The Sorcerers's Apprentice" in "Fantasia".
+  https://en.wikipedia.org/wiki/Fantasia_(1940_film)
+
+N.B.: While you are at it, expand your musical culture with Paul Dukas's score,
+as a continuation of Johan Strauss II's waltz that you so magnificently rendered
+at the beginning of the first lecture.
+  https://en.wikipedia.org/wiki/The_Blue_Danube
+
+----------
+
+Exercise 5, about implementing the Sigma notation using a for loop
+  https://en.wikipedia.org/wiki/Capital-sigma_notation
+
+The Sigma notation reads, given an non-negative integer n and a function f from (non-negative) integers to integers
+  sum for i = 0 to n of f(i)
+and it stands for
+  f(0) + f(1) + ... + f(n)
+
+In this notation, 0 is the lower bound, n is the upper bound, and f(i) is the body.
+
+Here, the notation is extended to negative integers in that given a negative integer m and a function f,
+  sum for i = 0 to m of f(i)
+stands for
+  0
+
+The starting point of this exercise is to implement -- in the programming language of your choice --
+a routine / function / procedure / method / what-have-you named Sigma0 that takes two parameters -- an integer n
+and a function f from integer to integer.
+Applying Sigma0 to n and f should yield the result of f(0) + f(1) + ... + f(n) when n is non-negative, and 0 otherwise.
+
+Requests:
+
+5.a.
+Devise meaningful tests for your implementation.
+For example, f could be a constant function, or the identify function,
+or the function that maps an integer i to the i+first odd natural number (namely \i.2*i + 1 using the lambda notation;
+then what is computed is 1 + 3 + 5 + ...).
+
+5.b.
+Implement Sigma0 using a for loop.
+
+5.c.
+Check that your implementation passes your unit tests.
+(The testing should be automatic, and since what goes well should go without saying,
+it should only report the tests that failed.)
+
+5.d.
+Implement a function named Sigma1 that takes two parameters -- an integer n
+and a function from integer to integer f.
+Applying Sigma1 to n and f should yield the result of f(1) + ... + f(n) when n is positive, and 0 otherwise.
+
+----------
+
+Exercise 6
+
+Questions:
+
+6.a.
+Given a non-negative integer n, what is the result of
+  sum for i = 0 to 2 * n of floor(n/2)
+where for any non-negative integer x, floor((2 * x)/2) = x and floor((2 * x + 1)/2) = x.
+
+6.b.
+Given a non-negative integer n, what is the result of
+  sum for i = 0 to 3 * n of floor(n/3)
+
+6.c.
+Given a non-negative integer n, what is the result of
+  sum for i = 0 to 4 * n of floor(n/4)
+
+6.d.
+Given a non-negative integer n, what is the result of
+  sum for i = 0 to 1 * n of floor(n/1)
+(Can you simplify this formulation?)
+
+Hint: Use the Online Encyclopedia of Integer Sequences.
+  https://oeis.org/
+
+----------
+
+Exercise 7
+
+Questions:
+
+7.a.
+What is the result of
+  1
+
+7.b.
+Given a non-negative integer x, what is the result of
+  sum for i1 = 0 to x of
+  1
+
+7.c.
+Given a non-negative integer x, what is the result of
+  sum for i2 = 0 to x of
+  sum for i1 = 0 to i2 of
+  1
+
+7.d.
+Given a non-negative integer x, what is the result of
+  sum for i3 = 0 to x of
+  sum for i2 = 0 to i3 of
+  sum for i1 = 0 to i2 of
+  1
+
+7.e.
+Given a non-negative integer x, what is the result of
+  sum for i4 = 0 to x of
+  sum for i3 = 0 to i4 of
+  sum for i2 = 0 to i3 of
+  sum for i1 = 0 to i2 of
+  1
+
+Requests:
+
+7.f.
+Implement a function that maps two non-negative integers N and x to
+  sum for iN = 0 to x of
+  sum for iN-1 = 0 to iN of
+  ...
+  sum for i2 = 0 to i3 of
+  sum for i1 = 0 to i2 of
+  1
+and empirically characterize its result.
+If possible (ha, ha, ha), justify your characterization.
+
+N.B.: Since there is no ambiguity, feel free to write
+  sum for i = 0 to x of
+  sum for i = 0 to i of
+  ...
+  sum for i = 0 to i of
+  sum for i = 0 to i of
+  1
+but then you need to say that there are N occurrences of "sum"
+since this information is no longer present in the notation.
+
+----------
+
+Exercise 8
+
+Requests:
+
+Implement a function that maps a non-negative integer N to
+  sum for iN = 0 to 0 of
+  sum for iN-1 = 0 to iN+1 of
+  ...
+  sum for i2 = 0 to i3+1 of
+  sum for i1 = 0 to i2+1 of
+  1
+and empirically characterize its result.
+If possible (ha, ha, ha), justify your characterization.
+
+----------
+
+Exercise 9
+
+Requests:
+
+Implement a function that maps a non-negative integer N to
+  sum for iN = 0 to 0 of
+  sum for iN-1 = 0 to 1-iN of
+  ...
+  sum for i2 = 0 to 1-i3 of
+  sum for i1 = 0 to 1-i2 of
+  1
+and characterize its result.
+(Remember that if the upper bound of a summation is negative, the result is 0.)
+If possible (ha, ha, ha), justify your characterization.
+
+----------
+
+Exercise 10
+
+Requests:
+
+Implement a function that maps a non-negative integer N to
+  sum for i = 0 to N of
+  sum for i = 0 to N-1 of
+  ...
+  sum for i = 0 to 2 of
+  sum for i = 0 to 1 of
+  sum for i = 0 to 0 of
+  1
+and characterize its result.
+Justify your characterization.
+
+----------
+
+Exercise 11
+
+Requests:
+
+Implement a function that maps a non-negative integer N to
+  sum for i = 0 to 0 of
+  sum for i = 0 to 1 of
+  ...
+  sum for i = 0 to N-1 of
+  sum for i = 0 to N of
+  1
+and characterize its result.
+Justify your characterization.
+
+----------
+
+Food for thought
+
+These nested sums are not efficient.  (Why?)
+How could their efficiency be improved?
+
+----------
+
+% end of week-01_CS2104_2026-2027.txt
