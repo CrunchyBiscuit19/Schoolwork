@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1786886507.25788 "c:/Users/Sim Yue Yang/Desktop/Schoolwork/CS2104/week01/week-01_CS2104_2026-2027.tex" "week-01_CS2104_2026-2027.pdf" "week-01_CS2104_2026-2027" 1786886508.35134 0
+["pdflatex"] 1786887259.30472 "c:/Users/Sim Yue Yang/Desktop/Schoolwork/CS2104/week01/week-01_CS2104_2026-2027.tex" "week-01_CS2104_2026-2027.pdf" "week-01_CS2104_2026-2027" 1786887260.26374 0
   "C:/Program Files/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
   "C:/Program Files/MiKTeX/tex/generic/bitset/bitset.sty" 1575926576 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "C:/Program Files/MiKTeX/tex/generic/gettitlestring/gettitlestring.sty" 1576433666 8371 9d55b8bd010bc717624922fb3477d92e ""
@@ -100,11 +100,11 @@
   "C:/Users/Sim Yue Yang/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "C:/Users/Sim Yue Yang/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/Sim" 1781088207 13340 8dc2afebaca68a2dcf22d5c13df84a8c ""
-  "c:/Users/Sim Yue Yang/Desktop/Schoolwork/CS2104/week01/week-01_CS2104_2026-2027.tex" 1786886506 26051 bb9fd038562c989152951d9c86df671e ""
-  "week-01_CS2104_2026-2027.aux" 1786886508 7508 957de21171844d4a682d2abcbb5f5bed "pdflatex"
-  "week-01_CS2104_2026-2027.out" 1786886508 8018 be4c8992adf1ca73128b3c12ea7d1a2e "pdflatex"
-  "week-01_CS2104_2026-2027.tex" 1786886506 26051 bb9fd038562c989152951d9c86df671e ""
-  "week-01_CS2104_2026-2027.toc" 1786886508 4806 0b844ab5e95027f9708a7ff8e20ab2db "pdflatex"
+  "c:/Users/Sim Yue Yang/Desktop/Schoolwork/CS2104/week01/week-01_CS2104_2026-2027.tex" 1786887258 26667 30ba11d9243402d9104b75ba3bc516c8 ""
+  "week-01_CS2104_2026-2027.aux" 1786887260 7508 957de21171844d4a682d2abcbb5f5bed "pdflatex"
+  "week-01_CS2104_2026-2027.out" 1786887260 8018 be4c8992adf1ca73128b3c12ea7d1a2e "pdflatex"
+  "week-01_CS2104_2026-2027.tex" 1786887258 26667 30ba11d9243402d9104b75ba3bc516c8 ""
+  "week-01_CS2104_2026-2027.toc" 1786887260 4806 0b844ab5e95027f9708a7ff8e20ab2db "pdflatex"
   (generated)
   "week-01_CS2104_2026-2027.aux"
   "week-01_CS2104_2026-2027.log"
