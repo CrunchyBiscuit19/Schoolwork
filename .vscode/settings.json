@@ -1,0 +1,31 @@
+{
+  // MiKTeX is installed but Perl is not, so latexmk (LaTeX Workshop's default
+  // recipe) cannot run. Use a plain pdflatex recipe instead; two passes so
+  // hyperref/\tableofcontents references settle.
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex x2",
+      "tools": ["pdflatex", "pdflatex"]
+    },
+    {
+      "name": "pdflatex x1",
+      "tools": ["pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.autoClean.onBuilt": true,
+  "latex-workshop.view.pdf.viewer": "tab"
+}
