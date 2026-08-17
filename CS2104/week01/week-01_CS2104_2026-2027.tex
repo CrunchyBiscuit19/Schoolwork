@@ -37,17 +37,28 @@
 }
 
 \author{
-    \textbf{Sim Yue Yang} (A0308298R, e1398738@u.nus.edu) \\
-    \textbf{Reuben Thomas} (A0273600N, reuben\_thomas@u.nus.edu) \\
-    \textbf{Eugene Long} (A0308383B, e1398823@u.nus.edu) \\
-    \textbf{Theodore Lim} (A0266620H, e1091280@u.nus.edu) \\
-    \textbf{Truong Kim Mai} (A0301529L, e1355895@u.nus.edu) \\
-    \textbf{Lin Haoyue} (A0309004U, haoyue@u.nus.edu) \\
-    \textbf{Matthew Allan} (A0305669U, e1375480@u.nus.edu) \\
-    \textbf{Kee Yen Cheng} (A0308304N, e1398744@u.nus.edu) \\
-    \textbf{Lim Hur} (A0302216X, e1356582@u.nus.edu) \\
-    \textbf{Umaiza} (A0321876X, e1524783@u.nus.edu)
+	\textbf{Sim Yue Yang} (A0308298R, yueyangsim02@gmail.com)
+	\and
+	\textbf{Reuben Thomas} (A0273600N, reuben\_thomas@u.nus.edu)
+	\and
+	\textbf{Eugene Long} (A0308383B, e1398823@u.nus.edu)
+	\and
+	\textbf{Theodore Lim} (A0266620H, e1091280@u.nus.edu)
+	\and
+	\textbf{Truong Kim Mai} (A0301529L, e1355895@u.nus.edu)
+	\and
+	\textbf{Lin Haoyue} (A0309004U, haoyue@u.nus.edu)
+	\and
+	\textbf{Matthew Allan} (A0305669U, e1375480@u.nus.edu)
+	\and
+	\textbf{Kee Yen Cheng} (A0308304N, e1398744@u.nus.edu)
+	\and
+	\textbf{Lim Hur} (A0302216X, e1356582@u.nus.edu)
+	\and
+	\textbf{Umaiza} (A0321876X, e1524783@u.nus.edu)
 }
+
+% TODO
 
 \date{\today}
 
@@ -60,14 +71,21 @@ This document contains the solutions to the Week 01 exercise. The code is provid
 \vfill
 
 \begin{center}
-...a picture, maybe...
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=120px]{fig1.png}
+\caption{relevant \href{https://xkcd.com/1270/}{xkcd} comic}
+\label{default}
+\end{center}
+\end{figure}
+
 \end{center}
 
 \vfill
 
 \begin{flushright}
-\emph{...a relevant quote, possibly...} \\
--- the author of the quote
+\emph{2! 1! 0! 4! (to the tune of "The Blue Danube")} \\
+-- Class of CS2104 (Sem 1, AY 26/27)
 \end{flushright}
 
 \newpage
@@ -75,6 +93,7 @@ This document contains the solutions to the Week 01 exercise. The code is provid
 \tableofcontents
 
 \newpage
+\setcounter{section}{-1}
 
 %%%%%%%%%%
 
@@ -84,16 +103,16 @@ This document contains the solutions to the Week 01 exercise. The code is provid
 \begin{itemize}
 
 \item
-  This document is the document that documents the solutions for the questions in the Week01 handin document.
+  This document presents possible solutions to the exercises in the Week01 handin.
 
 \item
-  This document documents the solutions for the questions in the Week01 handin.
+  Each solution will be prefaced with the exercise it attempts to answer and a brief explanation of the learning points, followed by the group's conclusion.
 
 \item
-  This point is situated in week 01 of the semester.
+  The material covered in this document corresponds to the content covered in week 1 of the CS2104 module (AY 26/27).
 
 \item
-  Title, abstract, content table, introduction, exercises (question, introduction, solution, conclusion for each exercise) \\ and an overall conclusion.
+  All answers are provided to the best of the authors' ability.
 
 \end{itemize}
 
@@ -202,7 +221,7 @@ test.
 
 \textbf{1.e.3} In the quote, fashion refers to itself. It also seems somewhat paradoxical, since it claims that fashion is something that is "no longer fashion".
 
-\textbf{1.e.4} In the movie, the Hamlet quote is used as a major plot point, but playfully refers to the title itself.
+\textbf{1.e.4} The 1942 film "To Be or Not to Be" references the play "Hamlet", which popularised the phrase "to be or not to be" that likely led to the naming of the 1942 film. As such, this can be considered an indirect self-reference.
 
 %%%%%
 
@@ -214,7 +233,7 @@ test.
   The point of the exercise was to practice spotting self-reference.
 
 \item
-  The learning points illustrated were direct self-reference, and indirect self-reference where A refers to B which refers back to A.
+  The learning points illustrated were direct self-reference (A refers to A), and indirect self-reference (A refers to B which refers back to A).
 
 \end{itemize}
 
@@ -272,6 +291,11 @@ is a play within a play.
 \item In Wes Anderson's movie Asteroid City, the plot revolves around a stage play with the same name, and a television documentary covering its behind-the-scenes.
 \item In Ridge Racer 7, the playable mini-game that appears during loading
   screens is Galaxian, the classic Namco arcade shooter.
+\item The "The King in Yellow" is a book written by Robert W. Chambers which
+  features a banned play in book form also called "The King in Yellow" (in the short story "The Repairer of Reputations").
+  This play is read by the protagonist, turning him paranoid and eccentric, ultimately culminating in his insanity.
+\item The game "Minecraft" is a free-form sandbox which allows players to build anything they can think of. This includes
+  simulations of computers that can \href{https://www.youtube.com/watch?v=-BP7DhHTU-I)}{run} a simplified version of "Minecraft" itself.
 \item In computer science, recursive functions are functions that call
   themselves as part of their execution.
 \end{itemize}
@@ -283,13 +307,14 @@ is a play within a play.
 \begin{itemize}
 
 \item
-  The point of the exercise was to spot self-reference in nested media and Computer Science.
+  The point of the exercise was to spot self-reference in nested media and Computer Science. In addition, it briefly touches upon the idea of
+  nesting an object within itself.
 
 \item
   The exercise was solved by giving real-life examples.
 
 \item
-  The learning point illustrated was that recursion is a form of self-reference.
+  The learning point illustrated was that nesting and self-reference are broad concepts that can exist beyond the field of Computer Science.
 
 \end{itemize}
 
@@ -351,7 +376,7 @@ Possible answers:
   The exercise was solved by finding the word "adventitiously".
 
 \item
-  The learning point illustrated was that the word "adventitiously" exists.
+  The learning point illustrated was that the word "adventitiously" exists, and to keep the spirit of manual inquiry alive.
 
 \end{itemize}
 
@@ -392,7 +417,7 @@ magnificently rendered at the beginning of the first lecture
 \subsection{Solution}
 
 \begin{itemize}
-\item The story is about the apprentice using magic, losing control of it, which results in a mess. If we view this as analogy where the apprentice is a CS undergrad and the magic is the LLM, we could say that a CS undergrad using LLMs wantonly will get nowhere. 
+\item The story is about the apprentice using magic, losing control of it, which results in a mess. If we view this as analogy where the apprentice is a CS undergrad and the magic is the LLM, we could say that a CS undergrad using LLMs wantonly will get nowhere.
 \end{itemize}
 
 %%%%%
@@ -495,7 +520,31 @@ Applying \texttt{Sigma1} to \texttt{n} and \texttt{f} should yield the result of
 
 \subsection{Solution}
 
-See functions Sigma0 and Sigma1 in week01.cpp.
+See functions Sigma0 and Sigma1 in week01.cpp. For the reader's convenience, a copy of the code is presented below:
+
+\begin{verbatim}
+int Sigma0(int n, std::function<int(int)>& f) {
+    if (n < 0)
+        return 0;
+    int acc = 0;
+    for (int i = 0; i <= n; i++) {
+        acc += f(i);
+    }
+    return acc;
+}
+
+int Sigma1(int n, std::function<int(int)>& f) {
+    if (n < 0)
+        return 0;
+    int acc = 0;
+    for (int i = 1; i <= n; i++) {
+        acc += f(i);
+    }
+    return acc;
+}
+\end{verbatim}
+
+The unit testing code has been omitted for brevity.
 
 %%%%%
 
@@ -1163,7 +1212,7 @@ by finding a formula that allows for direct computation.
 
 \section{Overall Conclusion}
 
-The overall conclusion goes here:
+In summary,
 
 \begin{itemize}
 
@@ -1172,6 +1221,15 @@ The overall conclusion goes here:
 
 \item
   Identification of self-referencing, as well as recognition of its results.
+
+\item
+  The use of online resources such as the On-line Encyclopedia of Integer Sequences (OEIS) to discover or identify patterns from unknown number sequences
+
+\item
+  Introducing how to simplify algorithms via characterising output patterns into formulas that can be directly computed.
+
+\item
+  Finally, caution should be taken when using AI to ensure it does not impede the learning process.
 
 \end{itemize}
 
