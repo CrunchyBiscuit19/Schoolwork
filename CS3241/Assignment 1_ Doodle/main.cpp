@@ -3,6 +3,7 @@
 // CS3241 Assignment 1: Doodle
 #include <cmath>
 #include <iostream>
+#include <array>
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -26,16 +27,17 @@ float MIDDLE_BODY_LENGTH = 13.f;
 float MIDDLE_BODY_HEIGHT = 1.5f;
 float UPPER_BODY_LENGTH = 8.f;
 float UPPER_BODY_HEIGHT = 1.5f;
+std::array<float, 3> BODY_WHITE = {0.949f, 0.945f, 0.929f}; 
 
 void drawLowerBody() {
-    glColor3f(0.8f, 0.78f, 0.82f);
+    glColor3fv(BODY_WHITE.data());
     
     glPushMatrix();
     
     glLoadIdentity();
     glTranslatef(-6.5f, -7.5f, 0.f);
 
-    glBegin(GL_POLYGON);
+    glBegin(GL_TRIANGLES);
 
     glVertex2f(0.f, 0.f);
     glVertex2f(LOWER_BODY_LENGTH, 0.f);
@@ -51,14 +53,14 @@ void drawLowerBody() {
 }
 
 void drawMiddleBody() {
-    glColor3f(0.8f, 0.78f, 0.82f);
+    glColor3fv(BODY_WHITE.data());
 
     glPushMatrix();
 
     glLoadIdentity();
     glTranslatef(-6.1f, -6.5f, 0.f);
 
-    glBegin(GL_POLYGON);
+    glBegin(GL_TRIANGLES);
 
     glVertex2f(0.f, 0.f);
     glVertex2f(MIDDLE_BODY_LENGTH, 0.f);
@@ -74,32 +76,35 @@ void drawMiddleBody() {
 }
 
 void drawUpperBody() {
-    glColor3f(0.8f, 0.78f, 0.82f);
+    glColor3fv(BODY_WHITE.data());
 
     glPushMatrix();
-
     glLoadIdentity();
     glTranslatef(-3.5f, -6.5f, 0.f);
 
     glBegin(GL_POLYGON);
 
     glVertex2f(0.f, 0.f);
-    glVertex2f(3.f, 0.f);
-    glVertex2f(3.f, UPPER_BODY_HEIGHT);
-
-    glVertex2f(3.f, 0.f);
-    glVertex2f(3.f, UPPER_BODY_HEIGHT);
-    glVertex2f(7.5f, UPPER_BODY_HEIGHT);
-
-    glVertex2f(3.f, UPPER_BODY_HEIGHT);
-    glVertex2f(7.5f, UPPER_BODY_HEIGHT);
-    glVertex2f(7.5f, 0.f);
-
-    glVertex2f(7.5f, UPPER_BODY_HEIGHT);
-    glVertex2f(7.5f, 0.f);
     glVertex2f(9.f, 0.f);
+    glVertex2f(7.5f, UPPER_BODY_HEIGHT);
+    glVertex2f(3.f, UPPER_BODY_HEIGHT);
 
     glEnd();
+
+    glColor3f(0.1f, 0.1f, 0.1f);
+    glScalef(.9f, .9f, .9f);
+    glTranslatef(.5f, 0.f, 0.f);
+
+    glBegin(GL_POLYGON);
+
+    glVertex2f(0.f, 0.f);
+    glVertex2f(9.f, 0.f);
+    glVertex2f(7.5f, UPPER_BODY_HEIGHT);
+    glVertex2f(3.f, UPPER_BODY_HEIGHT);
+
+    glEnd();
+
+    glPopMatrix();
 }
 
 void drawTyre() {
