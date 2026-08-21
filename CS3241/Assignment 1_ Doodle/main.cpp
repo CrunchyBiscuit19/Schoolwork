@@ -107,6 +107,62 @@ void drawUpperBody() {
     glPopMatrix();
 }
 
+void drawLights() {
+
+    glPushMatrix();
+
+    glLoadIdentity();
+    glTranslatef(-6.1f, -6.7f, 0.f);
+
+    glBegin(GL_TRIANGLES);
+
+    glColor3f(1.f, 1.f, 1.f);
+
+    glVertex2f(0.f, 0.f);
+    glVertex2f(0.f, -.5f);
+    glVertex2f(.5f, 0.f);
+
+    glColor3f(1.f, 0.f, 0.f);
+
+    glVertex2f(MIDDLE_BODY_LENGTH, 0.f);
+    glVertex2f(MIDDLE_BODY_LENGTH, -0.75f);
+    glVertex2f(MIDDLE_BODY_LENGTH - 0.75f, 0.f);
+
+    glEnd();
+
+    glPopMatrix();
+}
+
+void drawSpoiler() {
+    glColor3f(0.f, 0.f, 0.f);
+
+    glPushMatrix();
+
+    glLoadIdentity();
+    glTranslatef(6.f, -6.7f, 0.f);
+    glRotatef(-20.0f, 0.0f, 0.0f, 1.0f);  
+
+    glBegin(GL_POLYGON);
+    glVertex2f(0.f, 0.f);
+    glVertex2f(.5f, 0.f);
+    glVertex2f(.5f, 1.f);
+    glVertex2f(0.f, 1.f);
+    glEnd();
+
+    glTranslatef(.0f, .5f, 0.f);
+    glScalef(1.5f, 1.5f, 1.5f);
+    glRotatef(20.0f, 0.0f, 0.0f, 1.0f);  
+
+    glBegin(GL_POLYGON);
+    glVertex2f(0.f, 0.f);
+    glVertex2f(.5f, 0.f);
+    glVertex2f(.5f, .5f);
+    glVertex2f(0.f, .5f);
+    glEnd();
+
+    glPopMatrix();
+}
+
 void drawTyre() {
     glColor3f(0.0f, 0.0f, 0.0f);
     glBegin(GL_TRIANGLE_FAN);
@@ -174,9 +230,11 @@ void display(void) {
     glTranslatef(tx, ty, 0);
     glRotatef(alpha, 0, 0, 1);
 
+    drawSpoiler();
     drawLowerBody();
     drawMiddleBody();
     drawUpperBody();
+    drawLights();
     drawWheel(-5.f, -8.f);
     drawWheel(5.f, -8.f);
 
