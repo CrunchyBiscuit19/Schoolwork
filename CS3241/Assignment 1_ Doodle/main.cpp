@@ -27,7 +27,8 @@ float MIDDLE_BODY_LENGTH = 13.f;
 float MIDDLE_BODY_HEIGHT = 1.5f;
 float UPPER_BODY_LENGTH = 8.f;
 float UPPER_BODY_HEIGHT = 1.5f;
-std::array<float, 3> BODY_WHITE = {0.949f, 0.945f, 0.929f}; 
+std::array<float, 3> BODY_WHITE = {0.949f, 0.945f, 0.929f};
+std::array<float, 3> STRIPES_BLUE = {0.031f, 0.054f, 0.521f}; 
 
 void drawLowerBody() {
     glColor3fv(BODY_WHITE.data());
@@ -163,6 +164,49 @@ void drawSpoiler() {
     glPopMatrix();
 }
 
+void drawStripes() {
+    glColor3fv(STRIPES_BLUE.data());
+
+    glPushMatrix();
+    glLoadIdentity();
+    glTranslatef(-5.5f, -9.5f, 0.f);
+    glScalef(0.6f, 0.6f, 0.6f);
+
+    glBegin(GL_TRIANGLES);
+
+    glVertex2f(0.f, 0.f);
+    glVertex2f(0.f, 5.f);
+    glVertex2f(0.f, 2.f);
+
+    glVertex2f(0.f, 5.f);
+    glVertex2f(7.f, 5.f);
+    glVertex2f(2.f, 2.f);
+
+    glVertex2f(0.f, 5.f);
+    glVertex2f(2.f, 2.f);
+    glVertex2f(0.f, 2.f);
+
+    glVertex2f(5.f, 1.65f);
+    glVertex2f(11.f, 1.65f);
+    glVertex2f(17.f, 5.f);
+
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+
+    glVertex2f(14.f, 1.65f);
+    glVertex2f(20.f, 1.65f);
+    glVertex2f(18.f, 5.f);
+
+    glVertex2f(20.f, 1.65f);
+    glVertex2f(18.f, 5.f);
+    glVertex2f(20.7f, 5.f);
+
+    glEnd();
+
+    glPopMatrix();
+}
+
 void drawTyre() {
     glColor3f(0.0f, 0.0f, 0.0f);
     glBegin(GL_TRIANGLE_FAN);
@@ -234,6 +278,7 @@ void display(void) {
     drawLowerBody();
     drawMiddleBody();
     drawUpperBody();
+    drawStripes();
     drawLights();
     drawWheel(-5.f, -8.f);
     drawWheel(5.f, -8.f);
