@@ -34,8 +34,7 @@ void drawLowerBody() {
     glColor3fv(BODY_WHITE.data());
     
     glPushMatrix();
-    
-    glLoadIdentity();
+
     glTranslatef(-6.5f, -7.5f, 0.f);
 
     glBegin(GL_TRIANGLES);
@@ -58,7 +57,6 @@ void drawMiddleBody() {
 
     glPushMatrix();
 
-    glLoadIdentity();
     glTranslatef(-6.1f, -6.5f, 0.f);
 
     glBegin(GL_TRIANGLES);
@@ -80,7 +78,6 @@ void drawUpperBody() {
     glColor3fv(BODY_WHITE.data());
 
     glPushMatrix();
-    glLoadIdentity();
     glTranslatef(-3.5f, -6.5f, 0.f);
 
     glBegin(GL_POLYGON);
@@ -92,7 +89,10 @@ void drawUpperBody() {
 
     glEnd();
 
-    glColor3f(0.1f, 0.1f, 0.1f);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    glColor4f(0.1f, 0.1f, 0.1f, 0.55f);
     glScalef(.9f, .9f, .9f);
     glTranslatef(.5f, 0.f, 0.f);
 
@@ -105,6 +105,8 @@ void drawUpperBody() {
 
     glEnd();
 
+    glDisable(GL_BLEND);
+
     glPopMatrix();
 }
 
@@ -112,7 +114,6 @@ void drawLights() {
 
     glPushMatrix();
 
-    glLoadIdentity();
     glTranslatef(-6.1f, -6.7f, 0.f);
 
     glBegin(GL_TRIANGLES);
@@ -139,7 +140,6 @@ void drawSpoiler() {
 
     glPushMatrix();
 
-    glLoadIdentity();
     glTranslatef(6.f, -6.7f, 0.f);
     glRotatef(-20.0f, 0.0f, 0.0f, 1.0f);  
 
@@ -168,7 +168,6 @@ void drawStripes() {
     glColor3fv(STRIPES_BLUE.data());
 
     glPushMatrix();
-    glLoadIdentity();
     glTranslatef(-5.5f, -9.5f, 0.f);
     glScalef(0.6f, 0.6f, 0.6f);
 
@@ -255,12 +254,36 @@ void drawSpokes() {
 
 void drawWheel(float x, float y) {
     glPushMatrix();
-    glLoadIdentity();
     glTranslatef(x, y, 0.f);
     drawTyre();
     drawRim();
     drawSpokes();
     glPopMatrix();
+}
+
+void drawRoad() {
+    glColor3f(0.25f, 0.25f, 0.25f);
+    glBegin(GL_POLYGON);
+        glVertex2f(-10.f, -10.f);
+        glVertex2f(10.f, -10.f);
+        glVertex2f(10.f, -4.f);
+        glVertex2f(-10.f, -4.f);
+    glEnd();
+
+    glEnable(GL_LINE_STIPPLE);
+    glLineStipple(4, 0x00FF);
+    glLineWidth(3.0f);
+    glColor3f(1.f, 1.f, 0.f);
+
+    glPushMatrix();
+    glTranslatef(-9.f, -9.7f, 0.f);
+    glBegin(GL_LINES);
+        glVertex2f(0.f, 0.f);
+        glVertex2f(18.f, 0.f);
+    glEnd();
+    glPopMatrix();
+
+    glDisable(GL_LINE_STIPPLE);
 }
 
 void display(void) {
@@ -274,6 +297,7 @@ void display(void) {
     glTranslatef(tx, ty, 0);
     glRotatef(alpha, 0, 0, 1);
 
+    drawRoad();
     drawSpoiler();
     drawLowerBody();
     drawMiddleBody();
